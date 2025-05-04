@@ -25,14 +25,17 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     private final JwtTokenProvider tokenProvider;
+    private final AuthenticationConfiguration authenticationConfiguration;
 
     /**
      * Construtor que inicializa a configuração de segurança.
      *
      * @param tokenProvider Provedor de tokens JWT
+     * @param authenticationConfiguration Configuração de autenticação
      */
-    public SecurityConfig(JwtTokenProvider tokenProvider) {
+    public SecurityConfig(JwtTokenProvider tokenProvider, AuthenticationConfiguration authenticationConfiguration) {
         this.tokenProvider = tokenProvider;
+        this.authenticationConfiguration = authenticationConfiguration;
     }
 
     /**
@@ -58,13 +61,12 @@ public class SecurityConfig {
     /**
      * Configura o gerenciador de autenticação.
      *
-     * @param authConfig Configuração de autenticação
      * @return AuthenticationManager configurado
      * @throws Exception em caso de erro na configuração
      */
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
-        return authConfig.getAuthenticationManager();
+    public AuthenticationManager authenticationManager() throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
     }
 
     /**
