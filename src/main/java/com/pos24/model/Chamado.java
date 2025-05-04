@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.experimental.SuperBuilder;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -38,14 +39,17 @@ public class Chamado extends BaseEntity {
     private String descricao;
     
     @Column(nullable = false)
+    @Builder.Default
     private LocalDateTime dataAbertura = LocalDateTime.now();
     
     private LocalDateTime dataFechamento;
     
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private Status status = Status.ABERTO;
     
     @OneToMany(mappedBy = "chamado", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
     private List<FollowUp> followUps = new ArrayList<>();
 } 

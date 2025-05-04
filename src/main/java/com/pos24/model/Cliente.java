@@ -9,6 +9,7 @@ import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.experimental.SuperBuilder;
+import lombok.Builder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,5 +35,6 @@ public class Cliente extends BaseEntity {
     private String telefone;
     
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
     private List<Chamado> chamados = new ArrayList<>();
 } 

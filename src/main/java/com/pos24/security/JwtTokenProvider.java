@@ -53,10 +53,10 @@ public class JwtTokenProvider {
         Date validity = new Date(now.getTime() + validityInMilliseconds);
         
         return Jwts.builder()
-                .subject(username)
+                .setSubject(username)
                 .claim("auth", authorities)
-                .issuedAt(now)
-                .expiration(validity)
+                .setIssuedAt(now)
+                .setExpiration(validity)
                 .signWith(key)
                 .compact();
     }
@@ -69,10 +69,10 @@ public class JwtTokenProvider {
      */
     public boolean validateToken(String token) {
         try {
-            Jwts.parser()
-                    .verifyWith(key)
+            Jwts.parserBuilder()
+                    .setSigningKey(key)
                     .build()
-                    .parseSignedClaims(token);
+                    .parseClaimsJws(token);
             return true;
         } catch (JwtException | IllegalArgumentException e) {
             return false;
@@ -86,11 +86,11 @@ public class JwtTokenProvider {
      * @return Nome de usuário extraído do token
      */
     public String getUsername(String token) {
-        return Jwts.parser()
-                .verifyWith(key)
+        return Jwts.parserBuilder()
+                .setSigningKey(key)
                 .build()
-                .parseSignedClaims(token)
-                .getPayload()
+                .parseClaimsJws(token)
+                .getBody()
                 .getSubject();
     }
 } 

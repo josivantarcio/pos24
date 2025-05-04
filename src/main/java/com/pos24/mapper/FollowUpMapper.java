@@ -6,13 +6,14 @@ import com.pos24.model.FollowUp;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+import org.mapstruct.Named;
 import org.mapstruct.ReportingPolicy;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface FollowUpMapper extends BaseMapper<FollowUpDTO, FollowUp> {
     
     @Override
-    @Mapping(target = "chamado", source = "chamadoId")
+    @Mapping(target = "chamado", source = "chamadoId", qualifiedByName = "chamadoFromId")
     FollowUp toEntity(FollowUpDTO dto);
     
     @Override
@@ -20,9 +21,10 @@ public interface FollowUpMapper extends BaseMapper<FollowUpDTO, FollowUp> {
     FollowUpDTO toDTO(FollowUp entity);
     
     @Override
-    @Mapping(target = "chamado", source = "chamadoId")
+    @Mapping(target = "chamado", source = "chamadoId", qualifiedByName = "chamadoFromId")
     void updateEntity(FollowUpDTO dto, @MappingTarget FollowUp entity);
     
+    @Named("chamadoFromId")
     default Chamado chamadoFromId(Long id) {
         if (id == null) {
             return null;
