@@ -1,10 +1,11 @@
 package com.pos24.controller;
 
-import com.pos24.dto.LoginDTO;
+import com.pos24.dto.AuthRequest;
+import com.pos24.dto.AuthResponse;
 import com.pos24.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,29 +20,20 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = "*")
 @Tag(name = "Authentication", description = "Authentication management APIs")
+@RequiredArgsConstructor
 public class AuthController {
     
     private final AuthService authService;
     
     /**
-     * Construtor que inicializa o controlador de autenticação.
-     *
-     * @param authService Serviço de autenticação
-     */
-    @Autowired
-    public AuthController(AuthService authService) {
-        this.authService = authService;
-    }
-    
-    /**
      * Autentica um usuário e retorna um token JWT.
      *
-     * @param loginDTO DTO contendo as credenciais do usuário
+     * @param request DTO contendo as credenciais do usuário
      * @return ResponseEntity com o token JWT
      */
     @PostMapping("/login")
     @Operation(summary = "Authenticate user and get JWT token")
-    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) {
-        return authService.login(loginDTO);
+    public ResponseEntity<AuthResponse> login(@RequestBody AuthRequest request) {
+        return ResponseEntity.ok(authService.login(request));
     }
 } 

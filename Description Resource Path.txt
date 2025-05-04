@@ -1,0 +1,180 @@
+Description	Resource	Path	Location	Type
+Cliente.ClienteBuilder cannot be resolved to a type	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 22	Java Problem
+ClienteDTO.ClienteDTOBuilder cannot be resolved to a type	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 40	Java Problem
+FollowUp.FollowUpBuilder cannot be resolved to a type	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 23	Java Problem
+FollowUpDTO.FollowUpDTOBuilder cannot be resolved to a type	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 42	Java Problem
+No implementation was created for ClienteMapper due to having a problem in the erroneous element java.util.ArrayList. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.	ClienteMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 10	Annotation Problem (Java 6 processor)
+No implementation was created for FollowUpMapper due to having a problem in the erroneous element java.util.ArrayList. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.	FollowUpMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 13	Annotation Problem (Java 6 processor)
+No implementation was created for UsuarioMapper due to having a problem in the erroneous element java.util.ArrayList. Hint: this often means that some other annotation processor was supposed to process the erroneous element. You can also enable MapStruct verbose mode by setting -Amapstruct.verbose=true as a compilation argument.	UsuarioMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 10	Annotation Problem (Java 6 processor)
+The constructor BaseServiceImpl<ChamadoDTO,Chamado>(ChamadoRepository, ChamadoMapper) is undefined	ChamadoServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 26	Java Problem
+The method builder() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 17	Java Problem
+The method builder() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 39	Java Problem
+The method builder() is undefined for the type Cliente	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 25	Java Problem
+The method builder() is undefined for the type Cliente	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 75	Java Problem
+The method builder() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 22	Java Problem
+The method builder() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 40	Java Problem
+The method builder() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 23	Java Problem
+The method builder() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 42	Java Problem
+The method builder() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 24	Java Problem
+The method builder() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 48	Java Problem
+The method getChamado() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 74	Java Problem
+The method getChamado() is undefined for the type FollowUp	FollowUpServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 65	Java Problem
+The method getChamado() is undefined for the type FollowUp	FollowUpServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 67	Java Problem
+The method getChamadoId() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 25	Java Problem
+The method getChamadoId() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 61	Java Problem
+The method getChamadoId() is undefined for the type FollowUpDTO	FollowUpServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 79	Java Problem
+The method getCliente() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 49	Java Problem
+The method getCliente() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 50	Java Problem
+The method getCliente() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 51	Java Problem
+The method getClienteId() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 24	Java Problem
+The method getClienteId() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 26	Java Problem
+The method getClienteId() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 74	Java Problem
+The method getClienteId() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 76	Java Problem
+The method getClienteId() is undefined for the type ChamadoDTO	ChamadoServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 75	Java Problem
+The method getCreatedAt() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 45	Java Problem
+The method getCreatedAt() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 42	Java Problem
+The method getCreatedAt() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 24	Java Problem
+The method getCreatedAt() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 58	Java Problem
+The method getCreatedAt() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 45	Java Problem
+The method getCreatedAt() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 26	Java Problem
+The method getCreatedAt() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 62	Java Problem
+The method getCreatedAt() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 50	Java Problem
+The method getCreatedAt() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 26	Java Problem
+The method getCreatedAt() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 72	Java Problem
+The method getDataAbertura() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 43	Java Problem
+The method getDataAbertura() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 20	Java Problem
+The method getDataAbertura() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 20	Java Problem
+The method getDataAbertura() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 68	Java Problem
+The method getDataAbertura() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 69	Java Problem
+The method getDataEnvio() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 48	Java Problem
+The method getDataEnvio() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 29	Java Problem
+The method getDataEnvio() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 65	Java Problem
+The method getDataFechamento() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 44	Java Problem
+The method getDataFechamento() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 21	Java Problem
+The method getDataFechamento() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 71	Java Problem
+The method getDataFechamento() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 72	Java Problem
+The method getDescricao() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 41	Java Problem
+The method getDescricao() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 18	Java Problem
+The method getDescricao() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 62	Java Problem
+The method getDescricao() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 63	Java Problem
+The method getEmail() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 45	Java Problem
+The method getEmail() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 27	Java Problem
+The method getEmail() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 61	Java Problem
+The method getEmail() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 54	Java Problem
+The method getEmail() is undefined for the type Usuario	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 77	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 30	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 76	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 60	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 61	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 77	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 77	Java Problem
+The method getEmail() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 78	Java Problem
+The method getId() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 40	Java Problem
+The method getId() is undefined for the type Chamado	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 78	Java Problem
+The method getId() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 43	Java Problem
+The method getId() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 25	Java Problem
+The method getId() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 59	Java Problem
+The method getId() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 46	Java Problem
+The method getId() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 27	Java Problem
+The method getId() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 63	Java Problem
+The method getId() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 51	Java Problem
+The method getId() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 27	Java Problem
+The method getId() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 73	Java Problem
+The method getNome() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 46	Java Problem
+The method getNome() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 28	Java Problem
+The method getNome() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 62	Java Problem
+The method getNome() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 55	Java Problem
+The method getNome() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 31	Java Problem
+The method getNome() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 77	Java Problem
+The method getPassword() is undefined for the type Usuario	CustomUserDetailsService.java	/Pos-24/src/main/java/com/pos24/security	line 34	Java Problem
+The method getPassword() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 56	Java Problem
+The method getPassword() is undefined for the type Usuario	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 84	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 32	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 78	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 64	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 81	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 81	Java Problem
+The method getPassword() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 82	Java Problem
+The method getResultado() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 49	Java Problem
+The method getResultado() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 30	Java Problem
+The method getResultado() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 66	Java Problem
+The method getRoles() is undefined for the type Usuario	CustomUserDetailsService.java	/Pos-24/src/main/java/com/pos24/security	line 35	Java Problem
+The method getRoles() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 57	Java Problem
+The method getRoles() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 79	Java Problem
+The method getRoles() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 82	Java Problem
+The method getRoles() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 83	Java Problem
+The method getRoles() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 33	Java Problem
+The method getRoles() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 80	Java Problem
+The method getRoles() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 90	Java Problem
+The method getStatus() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 42	Java Problem
+The method getStatus() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 19	Java Problem
+The method getStatus() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 65	Java Problem
+The method getStatus() is undefined for the type ChamadoDTO	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 66	Java Problem
+The method getTelefone() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 47	Java Problem
+The method getTelefone() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 29	Java Problem
+The method getTelefone() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 63	Java Problem
+The method getTempoAberturaFechamento() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 50	Java Problem
+The method getTempoAberturaFechamento() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 31	Java Problem
+The method getTempoAberturaFechamento() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 67	Java Problem
+The method getUpdatedAt() is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 46	Java Problem
+The method getUpdatedAt() is undefined for the type Cliente	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 44	Java Problem
+The method getUpdatedAt() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 26	Java Problem
+The method getUpdatedAt() is undefined for the type ClienteDTO	ClienteMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 60	Java Problem
+The method getUpdatedAt() is undefined for the type FollowUp	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 47	Java Problem
+The method getUpdatedAt() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 28	Java Problem
+The method getUpdatedAt() is undefined for the type FollowUpDTO	FollowUpMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 64	Java Problem
+The method getUpdatedAt() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 52	Java Problem
+The method getUpdatedAt() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 28	Java Problem
+The method getUpdatedAt() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 74	Java Problem
+The method getUsername() is undefined for the type Usuario	CustomUserDetailsService.java	/Pos-24/src/main/java/com/pos24/security	line 33	Java Problem
+The method getUsername() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 61	Java Problem
+The method getUsername() is undefined for the type Usuario	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 74	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 37	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 95	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 57	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 58	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 74	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 74	Java Problem
+The method getUsername() is undefined for the type UsuarioDTO	UsuarioServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 75	Java Problem
+The method isAtivo() is undefined for the type Usuario	CustomUserDetailsService.java	/Pos-24/src/main/java/com/pos24/security	line 28	Java Problem
+The method isAtivo() is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 53	Java Problem
+The method isAtivo() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 29	Java Problem
+The method isAtivo() is undefined for the type UsuarioDTO	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 75	Java Problem
+The method setCliente(Cliente) is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 28	Java Problem
+The method setCliente(Cliente) is undefined for the type Chamado	ChamadoMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 78	Java Problem
+The method setId(Long) is undefined for the type Chamado	FollowUpMapper.java	/Pos-24/src/main/java/com/pos24/mapper	line 33	Java Problem
+The method setResultado(FollowUp.Resultado) is undefined for the type FollowUp	FollowUpServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 62	Java Problem
+The method setRoles(LinkedHashSet<String>) is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 92	Java Problem
+The method setRoles(null) is undefined for the type Usuario	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 86	Java Problem
+The method setStatus(Chamado.Status) is undefined for the type Chamado	ChamadoServiceImpl.java	/Pos-24/src/main/java/com/pos24/service/impl	line 67	Java Problem
+Usuario.UsuarioBuilder cannot be resolved to a type	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 24	Java Problem
+UsuarioDTO.UsuarioDTOBuilder cannot be resolved to a type	UsuarioMapperImpl.java	/Pos-24/target/generated-sources/annotations/com/pos24/mapper	line 48	Java Problem
+Newer patch version of Spring Boot available: 3.2.12 [BOOT_VERSION_VALIDATION_CODE]	pom.xml	/Pos-24	line 1	Spring Boot
+OSS support for Spring Boot 3.2.x ended on 2024-12-31, get commercial support until 2025-12-31 via Tanzu Spring Runtime at https://spring.io/support [BOOT_VERSION_VALIDATION_CODE]	pom.xml	/Pos-24	line 1	Spring Boot
+The import com.pos24.security.JwtAuthenticationFilter is never used	HelloControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 10	Java Problem
+The import org.springframework.security.authentication.AuthenticationManager is never used	HelloControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 13	Java Problem
+The import org.springframework.security.authentication.UsernamePasswordAuthenticationToken is never used	AuthControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 14	Java Problem
+The import org.springframework.security.config.annotation.web.builders.HttpSecurity is never used	HelloControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 15	Java Problem
+The import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer is never used	HelloControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 17	Java Problem
+The import org.springframework.security.core.Authentication is never used	AuthControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 15	Java Problem
+The import org.springframework.security.web.SecurityFilterChain is never used	HelloControllerTest.java	/Pos-24/src/test/java/com/pos24/controller	line 16	Java Problem
+The serializable class ResourceNotFoundException does not declare a static final serialVersionUID field of type long	ResourceNotFoundException.java	/Pos-24/src/main/java/com/pos24/exception	line 3	Java Problem
+The serializable class ValidationException does not declare a static final serialVersionUID field of type long	ValidationException.java	/Pos-24/src/main/java/com/pos24/exception	line 7	Java Problem
+The value of the field BaseDTO.id is not used	BaseDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 21	Java Problem
+The value of the field Chamado.dataFechamento is not used	Chamado.java	/Pos-24/src/main/java/com/pos24/model	line 45	Java Problem
+The value of the field ChamadoDTO.clienteNome is not used	ChamadoDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 24	Java Problem
+The value of the field ChamadoDTO.dataAbertura is not used	ChamadoDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 29	Java Problem
+The value of the field ChamadoDTO.dataFechamento is not used	ChamadoDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 30	Java Problem
+The value of the field ChamadoDTO.status is not used	ChamadoDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 31	Java Problem
+The value of the field FollowUpDTO.dataEnvio is not used	FollowUpDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 24	Java Problem
+The value of the field FollowUpDTO.resultado is not used	FollowUpDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 25	Java Problem
+The value of the field FollowUpDTO.tempoAberturaFechamento is not used	FollowUpDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 26	Java Problem
+The value of the field SecurityConfig.authenticationConfiguration is not used	SecurityConfig.java	/Pos-24/src/main/java/com/pos24/config	line 31	Java Problem
+The value of the field UsuarioDTO.ativo is not used	UsuarioDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 34	Java Problem
+The value of the field UsuarioDTO.roles is not used	UsuarioDTO.java	/Pos-24/src/main/java/com/pos24/dto	line 33	Java Problem
+Unnecessary `@Autowired` annotation [JAVA_AUTOWIRED_CONSTRUCTOR]	AuthController.java	/Pos-24/src/main/java/com/pos24/controller	line 31	Spring Boot
+Newer minor version of Spring Boot available: 3.4.5 [BOOT_VERSION_VALIDATION_CODE]	pom.xml	/Pos-24	line 1	Spring Boot
+public `@Bean` method [JAVA_PUBLIC_BEAN_METHOD]	SecurityConfig.java	/Pos-24/src/main/java/com/pos24/config	line 55	Spring Boot
+public `@Bean` method [JAVA_PUBLIC_BEAN_METHOD]	SecurityConfig.java	/Pos-24/src/main/java/com/pos24/config	line 75	Spring Boot
+public `@Bean` method [JAVA_PUBLIC_BEAN_METHOD]	SecurityConfig.java	/Pos-24/src/main/java/com/pos24/config	line 85	Spring Boot
+

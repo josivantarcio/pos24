@@ -2,7 +2,8 @@ package com.pos24.dto;
 
 import com.pos24.model.FollowUp.Resultado;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -11,7 +12,8 @@ import lombok.experimental.SuperBuilder;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
