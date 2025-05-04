@@ -1,19 +1,11 @@
 package com.pos24.controller;
 
 import com.pos24.dto.LoginDTO;
-import com.pos24.dto.UsuarioDTO;
-import com.pos24.model.Usuario;
-import com.pos24.security.JwtTokenProvider;
-import com.pos24.service.UsuarioService;
+import com.pos24.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -25,28 +17,20 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "*")
 @Tag(name = "Authentication", description = "Authentication management APIs")
 public class AuthController {
     
-    private final AuthenticationManager authenticationManager;
-    private final JwtTokenProvider tokenProvider;
-    private final UsuarioService usuarioService;
+    private final AuthService authService;
     
     /**
      * Construtor que inicializa o controlador de autenticação.
      *
-     * @param authenticationManager Gerenciador de autenticação
-     * @param tokenProvider Provedor de tokens JWT
-     * @param usuarioService Serviço de usuários
+     * @param authService Serviço de autenticação
      */
     @Autowired
-    public AuthController(
-            AuthenticationManager authenticationManager,
-            JwtTokenProvider tokenProvider,
-            UsuarioService usuarioService) {
-        this.authenticationManager = authenticationManager;
-        this.tokenProvider = tokenProvider;
-        this.usuarioService = usuarioService;
+    public AuthController(AuthService authService) {
+        this.authService = authService;
     }
     
     /**
@@ -57,29 +41,7 @@ public class AuthController {
      */
     @PostMapping("/login")
     @Operation(summary = "Authenticate user and get JWT token")
-    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginDTO loginDTO) {
-        Authentication authentication = authenticationManager.authenticate(
-            new UsernamePasswordAuthenticationToken(
-                loginDTO.getUsername(),
-                loginDTO.getPassword()
-            )
-        );
-
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        String jwt = tokenProvider.createToken(authentication);
-        
-        return ResponseEntity.ok(jwt);
-    }
-    
-    /**
-     * Registra um novo usuário no sistema.
-     *
-     * @param usuarioDTO DTO contendo os dados do novo usuário
-     * @return ResponseEntity com o usuário criado
-     */
-    @PostMapping("/register")
-    @Operation(summary = "Register a new user")
-    public ResponseEntity<UsuarioDTO> register(@Valid @RequestBody UsuarioDTO usuarioDTO) {
-        return ResponseEntity.ok(usuarioService.create(usuarioDTO));
+    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) {
+        return authService.login(loginDTO);
     }
 } 
