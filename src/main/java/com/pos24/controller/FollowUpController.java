@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controlador responsável por gerenciar as operações de follow-ups.
+ * 
+ * @author POS24 Team
+ * @version 1.0
+ * @since 2024
+ */
 @RestController
 @RequestMapping("/api/followups")
 @RequiredArgsConstructor
@@ -22,6 +29,12 @@ public class FollowUpController {
     
     private final FollowUpService followUpService;
     
+    /**
+     * Cria um novo follow-up.
+     *
+     * @param followUpDTO DTO contendo os dados do novo follow-up
+     * @return ResponseEntity com o follow-up criado
+     */
     @PostMapping
     @Operation(summary = "Criar um novo follow-up")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -29,6 +42,13 @@ public class FollowUpController {
         return ResponseEntity.ok(followUpService.create(followUpDTO));
     }
     
+    /**
+     * Atualiza um follow-up existente.
+     *
+     * @param id ID do follow-up a ser atualizado
+     * @param followUpDTO DTO contendo os novos dados do follow-up
+     * @return ResponseEntity com o follow-up atualizado
+     */
     @PutMapping("/{id}")
     @Operation(summary = "Atualizar um follow-up existente")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -36,6 +56,12 @@ public class FollowUpController {
         return ResponseEntity.ok(followUpService.update(id, followUpDTO));
     }
     
+    /**
+     * Exclui um follow-up.
+     *
+     * @param id ID do follow-up a ser excluído
+     * @return ResponseEntity vazio com status 204
+     */
     @DeleteMapping("/{id}")
     @Operation(summary = "Excluir um follow-up")
     @PreAuthorize("hasRole('ADMIN')")
@@ -44,6 +70,12 @@ public class FollowUpController {
         return ResponseEntity.noContent().build();
     }
     
+    /**
+     * Obtém um follow-up pelo ID.
+     *
+     * @param id ID do follow-up
+     * @return ResponseEntity com o follow-up encontrado
+     */
     @GetMapping("/{id}")
     @Operation(summary = "Obter um follow-up pelo ID")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -51,6 +83,11 @@ public class FollowUpController {
         return ResponseEntity.ok(followUpService.findById(id));
     }
     
+    /**
+     * Lista todos os follow-ups.
+     *
+     * @return ResponseEntity com a lista de follow-ups
+     */
     @GetMapping
     @Operation(summary = "Listar todos os follow-ups")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -58,13 +95,25 @@ public class FollowUpController {
         return ResponseEntity.ok(followUpService.findAll());
     }
     
+    /**
+     * Lista follow-ups com paginação.
+     *
+     * @param pageable Configuração de paginação
+     * @return ResponseEntity com a página de follow-ups
+     */
     @GetMapping("/page")
     @Operation(summary = "Listar follow-ups com paginação")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
-    public ResponseEntity<Page<FollowUpDTO>> findAll(Pageable pageable) {
+    public ResponseEntity<Page<FollowUpDTO>> findAllPageable(Pageable pageable) {
         return ResponseEntity.ok(followUpService.findAll(pageable));
     }
     
+    /**
+     * Lista follow-ups de um chamado específico.
+     *
+     * @param chamadoId ID do chamado
+     * @return ResponseEntity com a lista de follow-ups do chamado
+     */
     @GetMapping("/chamado/{chamadoId}")
     @Operation(summary = "Listar follow-ups de um chamado")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")

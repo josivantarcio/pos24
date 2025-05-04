@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controlador responsável por gerenciar as operações de chamados.
+ * 
+ * @author POS24 Team
+ * @version 1.0
+ * @since 2024
+ */
 @RestController
 @RequestMapping("/api/chamados")
 @RequiredArgsConstructor
@@ -22,6 +29,12 @@ public class ChamadoController {
     
     private final ChamadoService chamadoService;
     
+    /**
+     * Cria um novo chamado.
+     *
+     * @param chamadoDTO DTO contendo os dados do novo chamado
+     * @return ResponseEntity com o chamado criado
+     */
     @PostMapping
     @Operation(summary = "Criar um novo chamado")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -29,6 +42,13 @@ public class ChamadoController {
         return ResponseEntity.ok(chamadoService.create(chamadoDTO));
     }
     
+    /**
+     * Atualiza um chamado existente.
+     *
+     * @param id ID do chamado a ser atualizado
+     * @param chamadoDTO DTO contendo os novos dados do chamado
+     * @return ResponseEntity com o chamado atualizado
+     */
     @PutMapping("/{id}")
     @Operation(summary = "Atualizar um chamado existente")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -36,6 +56,12 @@ public class ChamadoController {
         return ResponseEntity.ok(chamadoService.update(id, chamadoDTO));
     }
     
+    /**
+     * Exclui um chamado.
+     *
+     * @param id ID do chamado a ser excluído
+     * @return ResponseEntity vazio com status 204
+     */
     @DeleteMapping("/{id}")
     @Operation(summary = "Excluir um chamado")
     @PreAuthorize("hasRole('ADMIN')")
@@ -44,6 +70,12 @@ public class ChamadoController {
         return ResponseEntity.noContent().build();
     }
     
+    /**
+     * Obtém um chamado pelo ID.
+     *
+     * @param id ID do chamado
+     * @return ResponseEntity com o chamado encontrado
+     */
     @GetMapping("/{id}")
     @Operation(summary = "Obter um chamado pelo ID")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -51,6 +83,11 @@ public class ChamadoController {
         return ResponseEntity.ok(chamadoService.findById(id));
     }
     
+    /**
+     * Lista todos os chamados.
+     *
+     * @return ResponseEntity com a lista de chamados
+     */
     @GetMapping
     @Operation(summary = "Listar todos os chamados")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
@@ -58,13 +95,25 @@ public class ChamadoController {
         return ResponseEntity.ok(chamadoService.findAll());
     }
     
+    /**
+     * Lista chamados com paginação.
+     *
+     * @param pageable Configuração de paginação
+     * @return ResponseEntity com a página de chamados
+     */
     @GetMapping("/page")
     @Operation(summary = "Listar chamados com paginação")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
-    public ResponseEntity<Page<ChamadoDTO>> findAll(Pageable pageable) {
+    public ResponseEntity<Page<ChamadoDTO>> findAllPageable(Pageable pageable) {
         return ResponseEntity.ok(chamadoService.findAll(pageable));
     }
     
+    /**
+     * Lista chamados de um cliente específico.
+     *
+     * @param clienteId ID do cliente
+     * @return ResponseEntity com a lista de chamados do cliente
+     */
     @GetMapping("/cliente/{clienteId}")
     @Operation(summary = "Listar chamados de um cliente")
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
