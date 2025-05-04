@@ -17,6 +17,4 @@ public interface UsuarioMapper extends BaseMapper<UsuarioDTO, Usuario> {
     
     @Override
     void updateEntity(UsuarioDTO dto, @MappingTarget Usuario entity);
-    
-    Usuario toEntityWithPassword(UsuarioDTO dto);
 } 

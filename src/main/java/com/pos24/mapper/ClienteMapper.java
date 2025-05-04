@@ -3,7 +3,6 @@ package com.pos24.mapper;
 import com.pos24.dto.ClienteDTO;
 import com.pos24.model.Cliente;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.ReportingPolicy;
 

@@ -8,8 +8,13 @@ import org.springframework.context.annotation.Import;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import com.pos24.security.JwtTokenProvider;
 import com.pos24.security.JwtAuthenticationFilter;
-import com.pos24.security.SecurityConfig;
+import com.pos24.config.SecurityConfig;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -27,6 +32,9 @@ class HelloControllerTest {
 
     @MockBean
     private UserDetailsService userDetailsService;
+
+    @MockBean
+    private AuthenticationConfiguration authenticationConfiguration;
 
     @Test
     void hello_ShouldReturnExpectedMessage() throws Exception {

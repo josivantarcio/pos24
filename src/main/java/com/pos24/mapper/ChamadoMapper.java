@@ -14,15 +14,27 @@ public interface ChamadoMapper extends BaseMapper<ChamadoDTO, Chamado> {
     
     @Override
     @Mapping(target = "cliente", source = "clienteId", qualifiedByName = "clienteFromId")
+    @Mapping(target = "descricao", source = "descricao")
+    @Mapping(target = "dataAbertura", source = "dataAbertura")
+    @Mapping(target = "dataFechamento", source = "dataFechamento")
+    @Mapping(target = "status", source = "status")
     Chamado toEntity(ChamadoDTO dto);
     
     @Override
-    @Mapping(target = "clienteId", source = "cliente.id")
-    @Mapping(target = "clienteNome", source = "cliente.nome")
+    @Mapping(target = "clienteId", expression = "java(entity.getCliente() != null ? entity.getCliente().getId() : null)")
+    @Mapping(target = "clienteNome", expression = "java(entity.getCliente() != null ? entity.getCliente().getNome() : null)")
+    @Mapping(target = "descricao", source = "descricao")
+    @Mapping(target = "dataAbertura", source = "dataAbertura")
+    @Mapping(target = "dataFechamento", source = "dataFechamento")
+    @Mapping(target = "status", source = "status")
     ChamadoDTO toDTO(Chamado entity);
     
     @Override
     @Mapping(target = "cliente", source = "clienteId", qualifiedByName = "clienteFromId")
+    @Mapping(target = "descricao", source = "descricao")
+    @Mapping(target = "dataAbertura", source = "dataAbertura")
+    @Mapping(target = "dataFechamento", source = "dataFechamento")
+    @Mapping(target = "status", source = "status")
     void updateEntity(ChamadoDTO dto, @MappingTarget Chamado entity);
     
     @Named("clienteFromId")
