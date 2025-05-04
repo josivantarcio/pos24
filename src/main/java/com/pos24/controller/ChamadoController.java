@@ -5,7 +5,6 @@ import com.pos24.service.ChamadoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +22,19 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/chamados")
-@RequiredArgsConstructor
 @Tag(name = "Chamados", description = "Gerenciamento de chamados")
 public class ChamadoController {
     
     private final ChamadoService chamadoService;
+    
+    /**
+     * Construtor que inicializa o serviço de chamados.
+     *
+     * @param chamadoService Serviço de chamados
+     */
+    public ChamadoController(ChamadoService chamadoService) {
+        this.chamadoService = chamadoService;
+    }
     
     /**
      * Cria um novo chamado.

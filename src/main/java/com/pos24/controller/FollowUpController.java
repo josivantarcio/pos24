@@ -5,7 +5,6 @@ import com.pos24.service.FollowUpService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +22,19 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/followups")
-@RequiredArgsConstructor
 @Tag(name = "Follow-ups", description = "Gerenciamento de follow-ups")
 public class FollowUpController {
     
     private final FollowUpService followUpService;
+    
+    /**
+     * Construtor que inicializa o serviço de follow-ups.
+     *
+     * @param followUpService Serviço de follow-ups
+     */
+    public FollowUpController(FollowUpService followUpService) {
+        this.followUpService = followUpService;
+    }
     
     /**
      * Cria um novo follow-up.

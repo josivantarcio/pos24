@@ -5,7 +5,6 @@ import com.pos24.service.ClienteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +22,19 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/clientes")
-@RequiredArgsConstructor
 @Tag(name = "Clientes", description = "Gerenciamento de clientes")
 public class ClienteController {
     
     private final ClienteService clienteService;
+    
+    /**
+     * Construtor que inicializa o serviço de clientes.
+     *
+     * @param clienteService Serviço de clientes
+     */
+    public ClienteController(ClienteService clienteService) {
+        this.clienteService = clienteService;
+    }
     
     /**
      * Cria um novo cliente.

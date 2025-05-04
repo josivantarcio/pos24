@@ -53,10 +53,10 @@ public class JwtTokenProvider {
         Date validity = new Date(now.getTime() + validityInMilliseconds);
         
         return Jwts.builder()
-                .setSubject(username)
+                .subject(username)
                 .claim("auth", authorities)
-                .setIssuedAt(now)
-                .setExpiration(validity)
+                .issuedAt(now)
+                .expiration(validity)
                 .signWith(key)
                 .compact();
     }

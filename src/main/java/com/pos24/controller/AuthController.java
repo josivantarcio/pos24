@@ -8,7 +8,7 @@ import com.pos24.service.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,13 +25,29 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/api/auth")
-@RequiredArgsConstructor
 @Tag(name = "Authentication", description = "Authentication management APIs")
 public class AuthController {
     
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider tokenProvider;
     private final UsuarioService usuarioService;
+    
+    /**
+     * Construtor que inicializa o controlador de autenticação.
+     *
+     * @param authenticationManager Gerenciador de autenticação
+     * @param tokenProvider Provedor de tokens JWT
+     * @param usuarioService Serviço de usuários
+     */
+    @Autowired
+    public AuthController(
+            AuthenticationManager authenticationManager,
+            JwtTokenProvider tokenProvider,
+            UsuarioService usuarioService) {
+        this.authenticationManager = authenticationManager;
+        this.tokenProvider = tokenProvider;
+        this.usuarioService = usuarioService;
+    }
     
     /**
      * Autentica um usuário e retorna um token JWT.
