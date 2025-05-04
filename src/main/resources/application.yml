@@ -22,7 +22,7 @@ springdoc:
     operationsSorter: method
 
 jwt:
-  secret: ${JWT_SECRET:your-256-bit-secret}
+  secret: ${JWT_SECRET:c8283a32c8283a32c8283a32c8283a32c8283a32c8283a32c8283a32c8283a32}
   expiration: 86400000 # 24 hours
 
 twilio:

@@ -10,6 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "usuarios")
 @Data
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
@@ -30,8 +31,10 @@ public class Usuario extends BaseEntity {
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "usuario_roles", joinColumns = @JoinColumn(name = "usuario_id"))
     @Column(name = "role")
+    @Builder.Default
     private Set<String> roles = new HashSet<>();
     
     @Column(nullable = false)
+    @Builder.Default
     private boolean ativo = true;
 } 

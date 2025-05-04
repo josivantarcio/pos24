@@ -3,6 +3,7 @@ package com.pos24.mapper;
 import com.pos24.dto.BaseDTO;
 import com.pos24.model.BaseEntity;
 import org.mapstruct.BeanMapping;
+import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 
@@ -20,6 +21,9 @@ public interface BaseMapper<D extends BaseDTO, E extends BaseEntity> {
      * @param dto DTO a ser convertido
      * @return Entidade convertida
      */
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
     E toEntity(D dto);
     
     /**
@@ -37,5 +41,8 @@ public interface BaseMapper<D extends BaseDTO, E extends BaseEntity> {
      * @param entity Entidade a ser atualizada
      */
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
     void updateEntity(D dto, @MappingTarget E entity);
 } 
